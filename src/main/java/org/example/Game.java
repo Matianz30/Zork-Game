@@ -5,4 +5,4 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-    record Game(String startRoom, String description, Map<String, Room> rooms) { }
+ public record Game(String startRoom, String description, Map<String, Room> rooms, Map<String, Verb> verbs) { }

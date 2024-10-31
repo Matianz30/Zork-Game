@@ -3,14 +3,14 @@ package org.example;
 import java.util.Scanner;
 
 public class Console {
-    private Scanner scan = new Scanner(System.in);
+    private static Scanner scan = new Scanner(System.in);
 
-    public String readString() {
-        System.out.print("Enter a string: ");
+    public static String readString() {
+        System.out.print(": ");
         return scan.nextLine();
     }
 
-    public void closeScanner() {
-        scan.close();
+    public static void print(String message) {
+        System.out.println(message);
     }
 }
